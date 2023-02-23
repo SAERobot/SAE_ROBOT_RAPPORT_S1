@@ -1,0 +1,66 @@
+\section{Présentation du projet}
+Dans le cadre de notre premier semestre en BUT GEII, nous devons mener un projet tuteuré qui consiste en la conception d’un robot suiveur de ligne avec à la clé une course entre les groupes formés pour élir vainqueur d’un concours inter IUT le robot le plus rapide.
+
+
+Afin de tous être sur le même pied d’égalité, nous possédons d’office une carcasse et les mêmes moteurs.
+Ce projet d’étude fait entrer en jeu un apprentissage de compétences en électronique, en informatique, en automatisme, en physique et en mathématiques.
+
+
+Le projet est divisé en 3 parties: la partie électronique, la partie programmation, et les options.
+
+
+Il faut d’abord souder et vérifier les cartes dégradées fournies par les tuteurs, puis designer les nôtres et les tester.
+Ensuite nous devons intégrer ces cartes sur notre robot, puis programmer le micro-contrôleur pour commander le robot et le faire suivre la ligne au mieux.
+Enfin, nous avons le choix d’intégrer à nos programmes des options nous permettant de bénéficier de gains de temps sur les épreuves.
+
+
+\subsection{Cahier des charges}
+Le but du projet étant de créer un robot suiveur de ligne blanche pour une course, il doit être rapide et fiable. Pour réussir cette étape, le projet impose une homologation imposant d’avoir des programmes permettant de passer au travers d’une zone de confettis blancs et de tracer un carré. 
+
+\noindent Assez succinctement : 
+\begin{itemize}
+    \item Nous devons construire le robot avec un châssis, des roues et des moteurs imposés.
+    \item Nous avons une liste de composants spécifiques disponibles et un micro-contrôleur imposé.
+    \item Nous devons désigner, souder et tester nos cartes électroniques,au moins les 3 principales.
+    \item Tous nos composants doivent pouvoir fonctionner ensemble.
+\end{itemize}\\
+
+\noindent Le robot doit spécifiquement :
+\begin{itemize}
+    \item Évoluer sans aucune aide extérieure.
+    \item Suivre le tracé de la piste d’une largeur de 19mm
+    \item Démarrer au retrait d’un câble jack.
+    \item S'arrêter automatiquement quand le robot rencontre un obstacle à l'avant.
+    \item Fonctionner avec la batterie fournie (12V).
+    \item Être reprogrammable à partir de la carte IHM.
+\end{itemize}
+
+\vfill
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}\\[0.2cm]
+I.U.T. Nice Côte d'Azur - SAE Robot - 2023 \hfill goofyBot
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}
+\newpage
+
+\subsection{Le robot et son environnement}
+
+\noindent Dans le cadre de ce projet, l'IUT nous a distribué une base de robot :
+
+\begin{itemize}
+    \item Une base de robot mobile (châssis, moteurs, roues, batterie, interrupteur, jack de départ, contact fin de course).
+    \item Une carte micro-contrôleur FRDM-KL25Z.
+    \item Des composants électroniques (cf. liste du matériel disponible).
+\end{itemize}
+
+\noindent Le robot sera soumis à 3 types d'environnement :
+
+\begin{itemize}
+    \item Une zone de confettis blancs (taille des confettis 40mm x 20mm maximum et espacés de 50mm entre eux) après laquelle il devra s'arrêter sur une zone blanche.
+    \item Un circuit dans lequel il suit une ligne blanche de 19mm de large et devra démarrer au retrait d'un cable jack et s'arrêter au fin de course en faisant tomber une barre placée à 8 cm au-dessus du sol.
+    \item Il devra réaliser un carré dont la taille ne sera connue qu'au dernier moment. Le côté du carré est compris entre 0,6m et 2m.
+\end{itemize}
+
+\vfill
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}\\[0.2cm]
+I.U.T. Nice Côte d'Azur - SAE Robot - 2023 \hfill goofyBot
+\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{.6pt}}
+\newpage
